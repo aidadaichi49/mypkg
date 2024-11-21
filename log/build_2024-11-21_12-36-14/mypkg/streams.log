@@ -1,0 +1,41 @@
+[1.223s] Invoking command in '/home/aida/ros2_ws/src/mypkg': PYTHONPATH=/home/aida/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/aida/ros2_ws/src/mypkg/build/mypkg/build install --record /home/aida/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.471s] running egg_info
+[1.471s] creating build/mypkg/mypkg.egg-info
+[1.472s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.473s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.473s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.473s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.473s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.481s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.522s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.523s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.523s] running build
+[1.524s] running build_py
+[1.524s] creating /home/aida/ros2_ws/src/mypkg/build/mypkg/build
+[1.525s] creating /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib
+[1.525s] creating /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.525s] copying mypkg/listener.py -> /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.525s] copying mypkg/talker.py -> /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.525s] copying mypkg/__init__.py -> /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.526s] running install
+[1.526s] running install_lib
+[1.528s] creating /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.528s] copying /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.528s] copying /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.529s] copying /home/aida/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/__init__.py -> /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.530s] byte-compiling /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[1.532s] byte-compiling /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[1.533s] byte-compiling /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[1.533s] running install_data
+[1.533s] creating /home/aida/ros2_ws/src/mypkg/install/mypkg/share/ament_index
+[1.534s] creating /home/aida/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index
+[1.534s] creating /home/aida/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.534s] copying resource/mypkg -> /home/aida/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.534s] copying package.xml -> /home/aida/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.535s] running install_egg_info
+[1.537s] Copying build/mypkg/mypkg.egg-info to /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.539s] running install_scripts
+[1.561s] Installing listener script to /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.562s] Installing talker script to /home/aida/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.562s] writing list of installed files to '/home/aida/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.587s] Invoked command in '/home/aida/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/aida/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aida/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/aida/ros2_ws/src/mypkg/build/mypkg/build install --record /home/aida/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
