@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Daichi Aida <da1649ichi@gmail.com>
+# SPDX-License-Identifier: BSD-3-Clause
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -24,6 +28,7 @@ class KeyboardTalker(Node):
                 msg = String()
                 msg.data = user_input
                 self.pub.publish(msg)
+                self.get_logger().info(f"Published message: {msg.data}")
             except EOFError:
                 break
 
