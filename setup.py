@@ -1,8 +1,5 @@
 from setuptools import setup
 
-import os
-from glob import glob
-
 package_name = 'mypkg'
 
 setup(
@@ -13,19 +10,17 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name), glob('launch/*.launch.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Daichi Aida',
     maintainer_email='da1649ichi@gmail.com',
-    description='ロボットシステム学のサンプル',
+    description='keyboard_talker',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-             'listener = mypkg.listener:main',
+            'keyboard_talker = mypkg.keyboard_talker:main',
         ],
     },
 )
