@@ -1,21 +1,20 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import String
+import threading
 
-class Talker(Node):
+class KeyboardTalker(Node):
     def __init__(self):
-        super().__init__("talker")
-        self.pub = self.create_publisher(Int16, "countup", 10)
-        self.create_timer(0.5, self.cb)
-        self.n = 0
+        super().__init__("keyboard_talker")
+        self.pub = self.create_publisher(String, "keyboard_input", 10)
+        self.create_thread()
 
-    def cb(self):
-        msg = Int16()
-        msg.data = self.n
-        self.pub.publish(msg)
-        self.n += 1
+    def create_thread(self):
+        self.input_thread = threading.Thread(target=self.get_user_input)
+        self.input_thread.daemon = True
+        self.input_thread.start()
 
-def main():
-    rclpy.init()
-    node = Talker()
-    rclpy.spin(node)
+    def get_user_input(self):
+        while rclpy.ok():
+            try:
+                user_input = input("Type some")
