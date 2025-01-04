@@ -5,7 +5,7 @@
 [![test](https://github.com/aidadaichi49/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/aidadaichi49/mypkg/actions/workflows/test.yml)
 
 ## テスト環境
-- ubuntu22.04
+- ubuntu22.04 LTS
 
 ## 概要
 
@@ -40,6 +40,10 @@ data: hello
 [INFO] [1736010124.617157728] [keyboard_talker]: Published message: hello
 exit
 ```
+
+- パブリッシュするトピック
+  - keyboard_input
+    - 型:String
 
 ## ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再配布および使用が許可されます.
